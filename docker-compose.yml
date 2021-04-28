@@ -17,6 +17,8 @@ services:
     image: openinggame/server:v1
     ports:
       - "81:81"
+      environment:
+      - API_HOST=<ip address>
     networks:
       - game
     depends_on:
